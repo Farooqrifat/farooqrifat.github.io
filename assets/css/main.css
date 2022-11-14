@@ -3282,11 +3282,42 @@ input, select, textarea {
 
 		}
 
+/* Outro */
+
+	#outro {
+
+		color: #ffffff;
+		padding: 3rem 4rem 2rem 4rem ;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: flex;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		position: relative;
+		cursor: default;
+		text-align: center;
+
+}
+	#outro a {
+
+		color: #ffffff !important;
+		border-bottom-color:#ffffff ;
+	}
+
+	#outro a:hover {
+		border-bottom-color: transparent;
+		color: #18bfef !important;
+	}
+
 /* Intro */
 
 	#intro {
 		color: #ffffff;
-		padding: 8rem 4rem 6rem 4rem ;
+		padding: 6rem 4rem 6rem 4rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
