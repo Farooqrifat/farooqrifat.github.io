@@ -2615,12 +2615,8 @@ input, select, textarea {
 		.image.right {
 			float: right;
 			margin: 0 0 2rem 2rem;
-			top: -3rem;
-		}
-
-		wiley.img {
-
-
+			top: -5.5rem;
+			max-width: 20%;
 		}
 
 		.image.fit {
