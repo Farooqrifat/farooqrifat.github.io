@@ -2619,6 +2619,21 @@ input, select, textarea {
 			max-width: 20%;
 		}
 
+		.image.uwlsu{
+
+			float: right;
+			margin: 0 0 2rem 2rem;
+			top: -2.5rem;
+			max-width: 20%;
+		}
+		.image.uwl{
+
+			float: right;
+			margin: 0 0 2rem 2rem;
+			top: -6.5rem;
+			max-width: 20%;
+		}
+
 		.image.fit {
 			display: block;
 			margin: 2.5rem 0;
