@@ -1,4 +1,19 @@
-
+/*
+  -------------------------------------------------------------------------
+		      JavaScript Form Validator (gen_validatorv31.js)
+              Version 3.1.2
+	Copyright (C) 2003-2008 JavaScript-Coder.com. All rights reserved.
+	You can freely use this script in your Web pages.
+	You may adapt this script for your own needs, provided these opening credit
+    lines are kept intact.
+		
+	The Form validation script is distributed free from JavaScript-Coder.com
+	For updates, please visit:
+	http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+	
+	Questions & comments please send to form.val at javascript-coder.com
+  -------------------------------------------------------------------------  
+*/
 function Validator(frmname)
 {
   this.formobj=document.forms[frmname];
@@ -21,7 +36,7 @@ function Validator(frmname)
 	this.addValidation = add_validation;
 	this.setAddnlValidationFunction=set_addnl_vfunction;
 	this.clearAllValidations = clear_all_validations;
-    this.disable_validations = false;
+    this.disable_validations = false;//new
     document.error_disp_handler = new sfm_ErrorDisplayHandler();
     this.EnableOnPageErrorDisplay=validator_enable_OPED;
 	this.EnableOnPageErrorDisplaySingleBox=validator_enable_OPED_SB;
