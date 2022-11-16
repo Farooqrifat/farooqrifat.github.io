@@ -37,27 +37,32 @@
 
 				<!-- Main -->
 					<div id="main">
-
 						<section>
-							<form method="post" action="#">
+							<form method="POST" name="contactform" action="form-to-email.php">
 								<div class="fields">
 									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<label for='name'>Name</label>
+										<input type="text" name="name" />
 									</div>
 									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<label for='email'>Email</label>
+										<input type="text" name="email" />
 									</div>
 									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
+										<label for='message'>Message</label>
+										<textarea name="message" rows="3"></textarea>
 									</div>
 								</div>
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
 							</form>
+							<script language="JavaScript">
+								var frmvalidator  = new Validator("contactform");
+								frmvalidator.addValidation("name","req","Please provide your name"); 
+								frmvalidator.addValidation("email","req","Please provide your email"); 
+								frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+								</script>
 						</section>
 					</div>
 
@@ -102,6 +107,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/gen_validatorv31.js"></script>
 
 	</body>
 </html>
